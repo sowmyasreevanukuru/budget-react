@@ -3,15 +3,17 @@ import { Icon, Segment } from "semantic-ui-react";
 import { Grid } from "semantic-ui-react";
 import { useDispatch } from "react-redux";
 import { removeEntryRedux } from "../actions/entries.actions";
+import { openEditModel } from "../actions/models.actions";
+
 export default function EntryLine({
   id,
   description,
   value,
   isExpense = false,
-  editEntry,
 }) {
   //console.log(value);
   const dispatch = useDispatch();
+  dispatch({ type: "TEST_MESSAGE" });
 
   return (
     <Fragment>
@@ -28,7 +30,7 @@ export default function EntryLine({
               <Icon
                 name="edit"
                 bordered
-                onClick={() => editEntry(id)}
+                onClick={() => dispatch(openEditModel(id))}
                 style={{ cursor: "pointer" }}
               />
               <Icon

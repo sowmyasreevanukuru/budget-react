@@ -1,0 +1,33 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "description": "Work income redux"
+    },
+    {
+      "id": 2,
+      "description": "Recharges"
+    },
+    {
+      "id": 3,
+      "description": "Food"
+    }
+  ],
+  "values": [
+    {
+      "id": 1,
+      "value": 10000.0,
+      "isExpense": false
+    },
+    {
+      "id": 2,
+      "value": 900.0,
+      "isExpense": true
+    },
+    {
+      "id": 3,
+      "value": 780.78,
+      "isExpense": true
+    }
+  ]
+}

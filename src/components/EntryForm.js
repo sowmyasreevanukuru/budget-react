@@ -11,25 +11,27 @@ function EntryForm({
 }) {
   return (
     <Fragment>
-      <Form.Group>
-        <Form.Input
-          icon="tags"
-          width={12}
-          placeholder="Enter new expense"
-          label="Description"
-          value={description}
-          onChange={(event) => setDescription(event.target.value)}
-        />
-        <Form.Input
-          width={4}
-          label="Value"
-          placeholder="100.00"
-          icon="dollar"
-          iconPosition="left"
-          value={value}
-          onChange={(event) => setValue(event.target.value)}
-        />
-      </Form.Group>
+      <Form>
+        <Form.Group>
+          <Form.Input
+            icon="tags"
+            width={12}
+            placeholder="Enter new expense"
+            label="Description"
+            value={description}
+            onChange={(event) => setDescription(event.target.value)}
+          />
+          <Form.Input
+            width={4}
+            label="Value"
+            placeholder="100.00"
+            icon="dollar"
+            iconPosition="left"
+            value={value}
+            onChange={(event) => setValue(event.target.value)}
+          />
+        </Form.Group>
+      </Form>
       <Segment>
         <Checkbox
           toggle
