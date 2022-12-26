@@ -1,8 +1,9 @@
 import React from "react";
-import EntryLine from "./EntryLine";
 import { Container } from "semantic-ui-react";
+import EntryLine from "./EntryLine";
 
-export default function EntryLines({ entries, deleteEntry, editEntry }) {
+function EntryLines({ entries }) {
+  console.log("entry lines", entries);
   return (
     <Container>
       {entries.map((entry) => (
@@ -11,3 +12,5 @@ export default function EntryLines({ entries, deleteEntry, editEntry }) {
     </Container>
   );
 }
+
+export default EntryLines;

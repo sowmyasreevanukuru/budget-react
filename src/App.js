@@ -17,6 +17,7 @@ function App() {
   const [entry, setEntry] = useState();
 
   const entries = useSelector((state) => state.entries);
+
   const { isOpen, id } = useSelector((state) => state.modals);
 
   useEffect(() => {
