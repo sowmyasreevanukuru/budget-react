@@ -13,7 +13,7 @@ export default function EntryLine({
 }) {
   //console.log(value);
   const dispatch = useDispatch();
-  dispatch({ type: "TEST_MESSAGE" });
+  //dispatch({ type: "TEST_MESSAGE" });
 
   return (
     <Fragment>

@@ -28,6 +28,7 @@ function useEntryDetails(desc = "", val = "", isExp = true) {
       })
     );
     dispatch(closeEditModel());
+    resetValues();
   }
 
   function addEntry() {

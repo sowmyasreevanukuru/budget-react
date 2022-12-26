@@ -23,6 +23,7 @@ function App() {
   useEffect(() => {
     const index = entries.findIndex((entry) => entry.id === id);
     setEntry(entries[index]);
+    console.log("app entries: ", entries);
   }, [isOpen, id, entries]);
 
   useEffect(() => {

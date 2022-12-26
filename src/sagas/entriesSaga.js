@@ -8,7 +8,7 @@ import {
 
 export function* getAllEntries() {
   yield take(entriesTypes.GET_ENTRIES);
-  console.log("I need to get the entries now");
+  console.log("Getting entries...");
   const { data } = yield call(axios, "http://localhost:3001/entries");
   yield put(populateEntries(data));
 }
