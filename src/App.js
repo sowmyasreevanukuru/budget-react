@@ -71,6 +71,17 @@ function App() {
       <Header as="h3">Add new transaction</Header>
       <NewFormEntry />
       <ModalEdit isOpen={isOpen} {...entry} />
+      <footer
+        style={{
+          backgroundColor: "#2185d0",
+          color: "#fff",
+          padding: "10px",
+          textAlign: "center",
+          marginTop: "50px",
+        }}
+      >
+        @budget project using redux saga
+      </footer>
     </Container>
   );
 }

@@ -3,25 +3,17 @@
     {
       "id": 1,
       "description": "Work income redux"
-    },
-    {
-      "id": 2,
-      "description": "Recharges"
-    },
-    {
-      "id": 3,
-      "description": "Food"
     }
   ],
   "values": [
     {
       "id": 1,
-      "value": 10000.0,
+      "value": 10000,
       "isExpense": false
     },
     {
       "id": 2,
-      "value": 900.0,
+      "value": 900,
       "isExpense": true
     },
     {
